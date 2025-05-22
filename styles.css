@@ -46,6 +46,9 @@ label {
   font-family: var(--heading-font);
   font-size: 15px;
   font-weight: 500;
+}
+
+label:not(:last-child) {
   margin-bottom: 10px;
 }
 
@@ -65,7 +68,7 @@ input:not(input[type="file"]) {
 
 .form-section {
   background-color: var(--secondary-color);
-  padding: 10px 24px;
+  padding: 20px 24px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
@@ -78,8 +81,10 @@ input:not(input[type="file"]) {
 }
 
 .signature-section {
+  display: flex;
+  flex-direction: column;
   background-color: var(--secondary-color);
-  padding: 10px 24px;
+  padding: 20px 24px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
@@ -89,6 +94,7 @@ input:not(input[type="file"]) {
   height: 90px;
   border: 1px solid var(--border-color);
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .profile-container {
@@ -125,4 +131,19 @@ input:not(input[type="file"]) {
 
 .fa-solid.fa-link {
   font-size: 13.5px;
+}
+
+.copy-sig-btn {
+  align-self: flex-start;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  padding: 8px 12px;
+  margin-top: auto;
+  font-family: var(--heading-font);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-color);
+  background-color: var(--accent-color);
 }
