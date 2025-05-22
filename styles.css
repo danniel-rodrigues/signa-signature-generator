@@ -27,11 +27,11 @@ body {
 }
 
 header {
-  padding: 30px 84px;
+  padding: 20px 84px;
 }
 
 .logo {
-  width: 150px;
+  width: 120px;
 }
 
 main {
@@ -44,6 +44,7 @@ label {
   display: flex;
   flex-direction: column;
   font-family: var(--heading-font);
+  font-size: 15px;
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -67,7 +68,14 @@ input:not(input[type="file"]) {
   align-items: center;
   justify-content: center;
   background-color: var(--secondary-color);
-  padding: 20px 24px;
+  padding: 10px 24px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.title {
+  color: var(--accent-color);
+  margin-bottom: 10px;
+  font-family: var(--heading-font);
+  font-size: 26px;
 }
