@@ -129,6 +129,12 @@ input:not(input[type="file"]) {
   color: var(--text-color);
 }
 
+#name-preview {
+  font-size: 24px;
+  font-weight: bold;
+  width: 300px;
+}
+
 .fa-solid.fa-link {
   font-size: 13.5px;
 }

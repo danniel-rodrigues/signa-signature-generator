@@ -21,28 +21,31 @@
           <h1 class="title">Suas informações</h1>
           <label
             >Logo ou imagem<input
+            id="image"
               type="file"
               accept=".png, .jpg, .jpeg"
               required
           /></label>
           <label
             >Nome completo<input
+            id="name"
               type="text"
               placeholder="Nome Completo"
               required
           /></label>
-          <label>Cargo<input type="text" placeholder="Cargo" required /></label>
+          <label>Cargo<input id="role" type="text" placeholder="Cargo" required /></label>
           <label
-            >Empresa<input type="text" placeholder="Nome da empresa"
+            >Empresa<input id="company" type="text" placeholder="Nome da empresa"
           /></label>
           <label
-            >Telefone<input type="tel" placeholder="Seu telefone" required
+            >Telefone<input id="tel" type="tel" placeholder="Seu telefone" required
           /></label>
           <label
-            >E-mail<input type="email" placeholder="Seu e-mail" required
+            >E-mail<input id="mail" type="email" placeholder="Seu e-mail" required
           /></label>
           <label
             >Website ou LinkedIn<input
+            id="url"
               type="url"
               placeholder="Website ou LinkedIn"
               required
@@ -60,26 +63,26 @@
               class="signature-img"
             />
             <div>
-              <h2>John Doe</h2>
-              <p>Front-End Developer</p>
+              <p id="name-preview">John Doe</p>
+              <p id="role-preview">Front-End Developer</p>
             </div>
           </div>
           <div class="profile-body">
             <span>
               <i class="fa-solid fa-briefcase"></i>
-              <p>Acme Corporation</p>
+              <p id="company-preview">Acme Corporation</p>
             </span>
             <span>
               <i class="fa-solid fa-phone"></i>
-              <p>(79) 99691-6890</p>
+              <p id="tel-preview">(79) 99691-6890</p>
             </span>
             <span>
               <i class="fa-solid fa-envelope"></i>
-              <p>johndoe@email.com</p>
+              <p id="mail-preview">johndoe@email.com</p>
             </span>
             <span>
               <i class="fa-solid fa-link"></i>
-              <p>linkedin.com/in/john-doe</p>
+              <p id="url-preview">linkedin.com/in/john-doe</p>
             </span>
           </div>
         </div>
