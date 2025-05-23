@@ -1,5 +1,7 @@
 let inputs = document.querySelectorAll("input");
 let previews = document.querySelectorAll("p");
+let uploadInput = inputs[0];
+let signatureImg = document.querySelector(".signature-img");
 
 // Atualiza o conteúdo do card de assinatura com as informações passadas pelo usuário.
 function livePreview(inputValue, inputID) {
@@ -18,3 +20,17 @@ inputs.forEach((input) => {
     livePreview(input.value, input.id);
   });
 });
+
+// Exibe a imagem que o usuário selecionar no input type file.
+function showImage() {
+  const reader = new FileReader();
+  reader.onload = () => {
+    let dataURL = reader.result;
+    signatureImg.src = dataURL;
+  };
+
+  reader.readAsDataURL(uploadInput.files[0]);
+}
+
+// Chama a função showImage assim que o usuário seleciona a imeagem.
+uploadInput.addEventListener("change", showImage);
